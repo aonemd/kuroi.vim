@@ -45,7 +45,6 @@
 " 2.  Add to ~/.vimrc:
 "
 "         let g:hybrid_custom_term_colors = 1
-"         let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 "         colorscheme hybrid
 "
 " For OSX users (iTerm):
@@ -61,7 +60,6 @@
 " 2.  Add to ~/.vimrc:
 "
 "         let g:hybrid_custom_term_colors = 1
-"         let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 "         colorscheme hybrid
 
 "}}}
@@ -84,17 +82,10 @@ let g:colors_name = "hybrid"
 
 let s:palette = {'gui' : {} , 'cterm' : {}}
 
-if exists("g:hybrid_reduced_contrast") && g:hybrid_reduced_contrast == 1
-  let s:gui_background = "#232c31"
-  let s:gui_selection  = "#425059"
-  let s:gui_line       = "#2d3c46"
-  let s:gui_comment    = "#6c7a80"
-else
-  let s:gui_background = "#1b1918"
-  let s:gui_selection  = "#373b41"
-  let s:gui_line       = "#282a2e"
-  let s:gui_comment    = "#707880"
-endif
+let s:gui_background = "#1b1918"
+let s:gui_selection  = "#373b41"
+let s:gui_line       = "#282a2e"
+let s:gui_comment    = "#707880"
 
 let s:palette.gui.background   = { 'dark' : s:gui_background , 'light' : "#e4e4e4" }
 let s:palette.gui.foreground   = { 'dark' : "#c5c8c6"        , 'light' : "#000000" }
