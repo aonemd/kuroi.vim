@@ -122,6 +122,9 @@ let s:palette.gui.darkpurple   = { 'dark' : "#5f005f"        , 'light' : "#5f005
 let s:palette.gui.gray         = { 'dark' : "#262626"        , 'light' : "#262626" }
 let s:palette.gui.statusline   = { 'dark' : "#585858"        , 'light' : "#585858" }
 let s:palette.gui.statuslinenc = { 'dark' : "#3a3a3a"        , 'light' : "#3a3a3a"  }
+let s:palette.gui.gitgutteradd = { 'dark' : "#009900"        , 'light' : "#009900"  }
+let s:palette.gui.gitgutterchg = { 'dark' : "#bbbb00"        , 'light' : "#bbbb00"  }
+let s:palette.gui.gitgutterdlt = { 'dark' : "#ff2222"        , 'light' : "#ff2222"  }
 
 if exists("g:hybrid_custom_term_colors") && g:hybrid_custom_term_colors == 1
   let s:cterm_foreground = "15"  " White
@@ -177,6 +180,9 @@ let s:palette.cterm.darkpurple   = { 'dark' : "53"               , 'light' : "53
 let s:palette.cterm.gray         = { 'dark' : "235"              , 'light' : "235"  }
 let s:palette.cterm.statusline   = { 'dark' : "240"              , 'light' : "240"  }
 let s:palette.cterm.statuslinenc = { 'dark' : "237"              , 'light' : "237"  }
+let s:palette.cterm.gitgutteradd = { 'dark' : "2"                , 'light' : "2"  }
+let s:palette.cterm.gitgutterchg = { 'dark' : "3"                , 'light' : "3"  }
+let s:palette.cterm.gitgutterdlt = { 'dark' : "1"                , 'light' : "1"  }
 
 "}}}
 " Formatting Options:"{{{
@@ -253,6 +259,9 @@ call s:build_prim('fg', 'darkcyan')
 call s:build_prim('fg', 'darkred')
 call s:build_prim('fg', 'darkpurple')
 call s:build_prim('fg', 'gray')
+call s:build_prim('fg', 'gitgutteradd')
+call s:build_prim('fg', 'gitgutterchg')
+call s:build_prim('fg', 'gitgutterdlt')
 
 exe "let s:fmt_none = ' gui=NONE".          " cterm=NONE".          " term=NONE"        ."'"
 exe "let s:fmt_bold = ' gui=NONE".s:b.      " cterm=NONE".s:b.      " term=NONE".s:b    ."'"
@@ -423,6 +432,13 @@ hi! link diffAdded Special
 "   diffLine
 "   diffSubname
 "   diffComment
+
+"}}}
+" GitGutter Sign Highlighting:"{{{
+" ----------------------------------------------------------------------------
+exe "hi! GitGutterAdd"     .s:fg_gitgutteradd  .s:bg_none  .s:fmt_none
+exe "hi! GitGutterChange"  .s:fg_gitgutterchg  .s:bg_none  .s:fmt_none
+exe "hi! GitGutterDelete"  .s:fg_gitgutterdlt  .s:bg_none  .s:fmt_none
 
 "}}}
 "
