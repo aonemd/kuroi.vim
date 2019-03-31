@@ -96,29 +96,32 @@ else
   let s:gui_comment    = "#707880"
 endif
 
-let s:palette.gui.background = { 'dark' : s:gui_background , 'light' : "#e4e4e4" }
-let s:palette.gui.foreground = { 'dark' : "#c5c8c6"        , 'light' : "#000000" }
-let s:palette.gui.selection  = { 'dark' : s:gui_selection  , 'light' : "#bcbcbc" }
-let s:palette.gui.line       = { 'dark' : s:gui_line       , 'light' : "#d0d0d0" }
-let s:palette.gui.comment    = { 'dark' : s:gui_comment    , 'light' : "#5f5f5f" }
-let s:palette.gui.red        = { 'dark' : "#cc6666"        , 'light' : "#5f0000" }
-let s:palette.gui.orange     = { 'dark' : "#de935f"        , 'light' : "#875f00" }
-let s:palette.gui.yellow     = { 'dark' : "#f0c674"        , 'light' : "#5f5f00" }
-let s:palette.gui.green      = { 'dark' : "#b5bd68"        , 'light' : "#005f00" }
-let s:palette.gui.aqua       = { 'dark' : "#8abeb7"        , 'light' : "#005f5f" }
-let s:palette.gui.blue       = { 'dark' : "#81a2be"        , 'light' : "#00005f" }
-let s:palette.gui.purple     = { 'dark' : "#b294bb"        , 'light' : "#5f005f" }
-let s:palette.gui.window     = { 'dark' : "#303030"        , 'light' : "#9e9e9e" }
-let s:palette.gui.darkcolumn = { 'dark' : "#1c1c1c"        , 'light' : "#808080" }
-let s:palette.gui.addbg      = { 'dark' : "#5F875F"        , 'light' : "#d7ffd7" }
-let s:palette.gui.addfg      = { 'dark' : "#d7ffaf"        , 'light' : "#005f00" }
-let s:palette.gui.changebg   = { 'dark' : "#5F5F87"        , 'light' : "#d7d7ff" }
-let s:palette.gui.changefg   = { 'dark' : "#d7d7ff"        , 'light' : "#5f005f" }
-let s:palette.gui.delbg      = { 'dark' : "#cc6666"        , 'light' : "#ffd7d7" }
-let s:palette.gui.darkblue   = { 'dark' : "#00005f"        , 'light' : "#d7ffd7" }
-let s:palette.gui.darkcyan   = { 'dark' : "#005f5f"        , 'light' : "#005f00" }
-let s:palette.gui.darkred    = { 'dark' : "#5f0000"        , 'light' : "#d7d7ff" }
-let s:palette.gui.darkpurple = { 'dark' : "#5f005f"        , 'light' : "#5f005f" }
+let s:palette.gui.background   = { 'dark' : s:gui_background , 'light' : "#e4e4e4" }
+let s:palette.gui.foreground   = { 'dark' : "#c5c8c6"        , 'light' : "#000000" }
+let s:palette.gui.selection    = { 'dark' : s:gui_selection  , 'light' : "#bcbcbc" }
+let s:palette.gui.line         = { 'dark' : s:gui_line       , 'light' : "#d0d0d0" }
+let s:palette.gui.comment      = { 'dark' : s:gui_comment    , 'light' : "#5f5f5f" }
+let s:palette.gui.red          = { 'dark' : "#cc6666"        , 'light' : "#5f0000" }
+let s:palette.gui.orange       = { 'dark' : "#de935f"        , 'light' : "#875f00" }
+let s:palette.gui.yellow       = { 'dark' : "#f0c674"        , 'light' : "#5f5f00" }
+let s:palette.gui.green        = { 'dark' : "#b5bd68"        , 'light' : "#005f00" }
+let s:palette.gui.aqua         = { 'dark' : "#8abeb7"        , 'light' : "#005f5f" }
+let s:palette.gui.blue         = { 'dark' : "#81a2be"        , 'light' : "#00005f" }
+let s:palette.gui.purple       = { 'dark' : "#b294bb"        , 'light' : "#5f005f" }
+let s:palette.gui.window       = { 'dark' : "#303030"        , 'light' : "#9e9e9e" }
+let s:palette.gui.darkcolumn   = { 'dark' : "#1c1c1c"        , 'light' : "#808080" }
+let s:palette.gui.addbg        = { 'dark' : "#5F875F"        , 'light' : "#d7ffd7" }
+let s:palette.gui.addfg        = { 'dark' : "#d7ffaf"        , 'light' : "#005f00" }
+let s:palette.gui.changebg     = { 'dark' : "#5F5F87"        , 'light' : "#d7d7ff" }
+let s:palette.gui.changefg     = { 'dark' : "#d7d7ff"        , 'light' : "#5f005f" }
+let s:palette.gui.delbg        = { 'dark' : "#cc6666"        , 'light' : "#ffd7d7" }
+let s:palette.gui.darkblue     = { 'dark' : "#00005f"        , 'light' : "#d7ffd7" }
+let s:palette.gui.darkcyan     = { 'dark' : "#005f5f"        , 'light' : "#005f00" }
+let s:palette.gui.darkred      = { 'dark' : "#5f0000"        , 'light' : "#d7d7ff" }
+let s:palette.gui.darkpurple   = { 'dark' : "#5f005f"        , 'light' : "#5f005f" }
+let s:palette.gui.gray         = { 'dark' : "#262626"        , 'light' : "#262626" }
+let s:palette.gui.statusline   = { 'dark' : "#585858"        , 'light' : "#585858" }
+let s:palette.gui.statuslinenc = { 'dark' : "#3a3a3a"        , 'light' : "#3a3a3a"  }
 
 if exists("g:hybrid_custom_term_colors") && g:hybrid_custom_term_colors == 1
   let s:cterm_foreground = "15"  " White
@@ -148,29 +151,32 @@ else
   let s:cterm_delbg      = "167"
 endif
 
-let s:palette.cterm.background = { 'dark' : "0"                , 'light' : "254" }
-let s:palette.cterm.foreground = { 'dark' : s:cterm_foreground , 'light' : "16"  }
-let s:palette.cterm.window     = { 'dark' : "236"              , 'light' : "247" }
-let s:palette.cterm.selection  = { 'dark' : s:cterm_selection  , 'light' : "250" }
-let s:palette.cterm.line       = { 'dark' : s:cterm_line       , 'light' : "252" }
-let s:palette.cterm.comment    = { 'dark' : s:cterm_comment    , 'light' : "59"  }
-let s:palette.cterm.red        = { 'dark' : s:cterm_red        , 'light' : "52"  }
-let s:palette.cterm.orange     = { 'dark' : s:cterm_orange     , 'light' : "94"  }
-let s:palette.cterm.yellow     = { 'dark' : s:cterm_yellow     , 'light' : "58"  }
-let s:palette.cterm.green      = { 'dark' : s:cterm_green      , 'light' : "22"  }
-let s:palette.cterm.aqua       = { 'dark' : s:cterm_aqua       , 'light' : "23"  }
-let s:palette.cterm.blue       = { 'dark' : s:cterm_blue       , 'light' : "17"  }
-let s:palette.cterm.purple     = { 'dark' : s:cterm_purple     , 'light' : "53"  }
-let s:palette.cterm.darkcolumn = { 'dark' : "234"              , 'light' : "244" }
-let s:palette.cterm.addbg      = { 'dark' : "65"               , 'light' : "194" }
-let s:palette.cterm.addfg      = { 'dark' : "193"              , 'light' : "22"  }
-let s:palette.cterm.changebg   = { 'dark' : "60"               , 'light' : "189" }
-let s:palette.cterm.changefg   = { 'dark' : "189"              , 'light' : "53"  }
-let s:palette.cterm.delbg      = { 'dark' : s:cterm_delbg      , 'light' : "224" }
-let s:palette.cterm.darkblue   = { 'dark' : "17"               , 'light' : "194" }
-let s:palette.cterm.darkcyan   = { 'dark' : "24"               , 'light' : "22"  }
-let s:palette.cterm.darkred    = { 'dark' : "52"               , 'light' : "189" }
-let s:palette.cterm.darkpurple = { 'dark' : "53"               , 'light' : "53"  }
+let s:palette.cterm.background   = { 'dark' : "0"                , 'light' : "254" }
+let s:palette.cterm.foreground   = { 'dark' : s:cterm_foreground , 'light' : "16"  }
+let s:palette.cterm.window       = { 'dark' : "236"              , 'light' : "247" }
+let s:palette.cterm.selection    = { 'dark' : s:cterm_selection  , 'light' : "250" }
+let s:palette.cterm.line         = { 'dark' : s:cterm_line       , 'light' : "252" }
+let s:palette.cterm.comment      = { 'dark' : s:cterm_comment    , 'light' : "59"  }
+let s:palette.cterm.red          = { 'dark' : s:cterm_red        , 'light' : "52"  }
+let s:palette.cterm.orange       = { 'dark' : s:cterm_orange     , 'light' : "94"  }
+let s:palette.cterm.yellow       = { 'dark' : s:cterm_yellow     , 'light' : "58"  }
+let s:palette.cterm.green        = { 'dark' : s:cterm_green      , 'light' : "22"  }
+let s:palette.cterm.aqua         = { 'dark' : s:cterm_aqua       , 'light' : "23"  }
+let s:palette.cterm.blue         = { 'dark' : s:cterm_blue       , 'light' : "17"  }
+let s:palette.cterm.purple       = { 'dark' : s:cterm_purple     , 'light' : "53"  }
+let s:palette.cterm.darkcolumn   = { 'dark' : "234"              , 'light' : "244" }
+let s:palette.cterm.addbg        = { 'dark' : "65"               , 'light' : "194" }
+let s:palette.cterm.addfg        = { 'dark' : "193"              , 'light' : "22"  }
+let s:palette.cterm.changebg     = { 'dark' : "60"               , 'light' : "189" }
+let s:palette.cterm.changefg     = { 'dark' : "189"              , 'light' : "53"  }
+let s:palette.cterm.delbg        = { 'dark' : s:cterm_delbg      , 'light' : "224" }
+let s:palette.cterm.darkblue     = { 'dark' : "17"               , 'light' : "194" }
+let s:palette.cterm.darkcyan     = { 'dark' : "24"               , 'light' : "22"  }
+let s:palette.cterm.darkred      = { 'dark' : "52"               , 'light' : "189" }
+let s:palette.cterm.darkpurple   = { 'dark' : "53"               , 'light' : "53"  }
+let s:palette.cterm.gray         = { 'dark' : "235"              , 'light' : "235"  }
+let s:palette.cterm.statusline   = { 'dark' : "240"              , 'light' : "240"  }
+let s:palette.cterm.statuslinenc = { 'dark' : "237"              , 'light' : "237"  }
 
 "}}}
 " Formatting Options:"{{{
@@ -220,6 +226,8 @@ call s:build_prim('bg', 'darkblue')
 call s:build_prim('bg', 'darkcyan')
 call s:build_prim('bg', 'darkred')
 call s:build_prim('bg', 'darkpurple')
+call s:build_prim('bg', 'statusline')
+call s:build_prim('bg', 'statuslinenc')
 
 let s:fg_none = ' guifg=NONE ctermfg=NONE'
 call s:build_prim('fg', 'foreground')
@@ -244,6 +252,7 @@ call s:build_prim('fg', 'darkblue')
 call s:build_prim('fg', 'darkcyan')
 call s:build_prim('fg', 'darkred')
 call s:build_prim('fg', 'darkpurple')
+call s:build_prim('fg', 'gray')
 
 exe "let s:fmt_none = ' gui=NONE".          " cterm=NONE".          " term=NONE"        ."'"
 exe "let s:fmt_bold = ' gui=NONE".s:b.      " cterm=NONE".s:b.      " term=NONE".s:b    ."'"
@@ -310,16 +319,16 @@ exe "hi! Pmenu"         .s:fg_foreground  .s:bg_selection   .s:fmt_none
 exe "hi! PmenuSel"      .s:fg_foreground  .s:bg_selection   .s:fmt_revr
 "   PmenuSbar"
 "   PmenuThumb"
-exe "hi! Question"      .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_background  .s:bg_yellow      .s:fmt_none
-exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
-exe "hi! SpellCap"      .s:fg_blue        .s:bg_darkblue    .s:fmt_undr
-exe "hi! SpellLocal"    .s:fg_aqua        .s:bg_darkcyan    .s:fmt_undr
-exe "hi! SpellBad"      .s:fg_red         .s:bg_darkred     .s:fmt_undr
-exe "hi! SpellRare"     .s:fg_purple      .s:bg_darkpurple  .s:fmt_undr
-exe "hi! StatusLine"    .s:fg_comment     .s:bg_background  .s:fmt_revr
-exe "hi! StatusLineNC"  .s:fg_window      .s:bg_comment     .s:fmt_revr
-exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
+exe "hi! Question"      .s:fg_green       .s:bg_none          .s:fmt_none
+exe "hi! Search"        .s:fg_background  .s:bg_yellow        .s:fmt_none
+exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none          .s:fmt_none
+exe "hi! SpellCap"      .s:fg_blue        .s:bg_darkblue      .s:fmt_undr
+exe "hi! SpellLocal"    .s:fg_aqua        .s:bg_darkcyan      .s:fmt_undr
+exe "hi! SpellBad"      .s:fg_red         .s:bg_darkred       .s:fmt_undr
+exe "hi! SpellRare"     .s:fg_purple      .s:bg_darkpurple    .s:fmt_undr
+exe "hi! StatusLine"    .s:fg_gray        .s:bg_statusline    .s:fmt_revr
+exe "hi! StatusLineNC"  .s:fg_gray        .s:bg_statuslinenc  .s:fmt_revr
+exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn    .s:fmt_revr
 "   TabLineFill"
 "   TabLineSel"
 exe "hi! Title"         .s:fg_yellow      .s:bg_none        .s:fmt_none
