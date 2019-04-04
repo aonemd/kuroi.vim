@@ -1,4 +1,4 @@
-# hybrid.vim
+# kuroi.vim
 
 A dark colour scheme for Vim that combines the:
 

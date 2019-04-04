@@ -1,68 +1,9 @@
-" File:       hybrid.vim
-" Maintainer: Andrew Wong (w0ng)
-" URL:        https://github.com/w0ng/vim-hybrid
-" Modified:   27 Jan 2013 07:33 AM AEST
+" File:       kuroi.vim
+" Maintainer: aonemd
+" URL:        https://github.com/aonemd/kuroi.vim
+" Modified:   04 April 2019 02:38 PM EET
 " License:    MIT
 
-" Description:"{{{
-" ----------------------------------------------------------------------------
-" The default RGB colour palette is taken from Tomorrow-Night.vim:
-" https://github.com/chriskempson/vim-tomorrow-theme
-"
-" The reduced RGB colour palette is taken from Codecademy's online editor:
-" https://www.codecademy.com/learn
-"
-" The syntax highlighting scheme is taken from jellybeans.vim:
-" https://github.com/nanotech/jellybeans.vim
-"
-" The is code taken from solarized.vim:
-" https://github.com/altercation/vim-colors-solarized
-
-"}}}
-" Requirements And Recommendations:"{{{
-" ----------------------------------------------------------------------------
-" Requirements
-"   - gVim 7.3+ on Linux, Mac and Windows.
-"   - Vim 7.3+ on Linux and Mac, using a terminal that supports 256 colours.
-"
-" Due to the limited 256 palette, colours in Vim and gVim will still be slightly
-" different.
-"
-" In order to have Vim use the same colours as gVim (the way this colour scheme
-" is intended), it is recommended that you define the basic 16 colours in your
-" terminal.
-"
-" For Linux users (rxvt-unicode, xterm):
-"
-" 1.  Add the default palette to ~/.Xresources:
-"
-"         https://gist.github.com/3278077
-"
-"     or alternatively, add the reduced contrast palette to ~/.Xresources:
-"
-"         https://gist.github.com/w0ng/16e33902508b4a0350ae
-"
-" 2.  Add to ~/.vimrc:
-"
-"         let g:hybrid_custom_term_colors = 1
-"         colorscheme hybrid
-"
-" For OSX users (iTerm):
-"
-" 1.  Import the default colour preset into iTerm:
-"
-"         https://raw.githubusercontent.com/w0ng/dotfiles/master/iterm2/hybrid.itermcolors
-"
-"     or alternatively, import the reduced contrast color preset into iTerm:
-"
-"         https://raw.githubusercontent.com/w0ng/dotfiles/master/iterm2/hybrid-reduced-contrast.itermcolors
-"
-" 2.  Add to ~/.vimrc:
-"
-"         let g:hybrid_custom_term_colors = 1
-"         colorscheme hybrid
-
-"}}}
 " Initialisation:"{{{
 " ----------------------------------------------------------------------------
 
@@ -74,7 +15,7 @@ endif
 
 let s:style = &background
 
-let g:colors_name = "hybrid"
+let g:colors_name = "kuroi"
 
 "}}}
 " GUI And Cterm Palettes:"{{{
@@ -117,7 +58,7 @@ let s:palette.gui.gitgutteradd = { 'dark' : "#009900"        , 'light' : "#00990
 let s:palette.gui.gitgutterchg = { 'dark' : "#bbbb00"        , 'light' : "#bbbb00"  }
 let s:palette.gui.gitgutterdlt = { 'dark' : "#ff2222"        , 'light' : "#ff2222"  }
 
-if exists("g:hybrid_custom_term_colors") && g:hybrid_custom_term_colors == 1
+if exists("g:kuroi_custom_term_colors") && g:kuroi_custom_term_colors == 1
   let s:cterm_foreground = "15"  " White
   let s:cterm_selection  = "8"   " DarkGrey
   let s:cterm_line       = "0"   " Black
@@ -341,7 +282,7 @@ hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NO
 "   WildMenu"
 
 " Use defined custom background colour for terminal Vim.
-if !has('gui_running') && exists("g:hybrid_custom_term_colors") && g:hybrid_custom_term_colors == 1
+if !has('gui_running') && exists("g:kuroi_custom_term_colors") && g:kuroi_custom_term_colors == 1
   let s:bg_normal = s:bg_none
 else
   let s:bg_normal = s:bg_background
