@@ -36,7 +36,7 @@ let s:palette.gui.comment      = { 'dark' : s:gui_comment    , 'light' : "#5f5f5
 let s:palette.gui.red          = { 'dark' : "#d75f87"        , 'light' : "#5f0000" }
 let s:palette.gui.orange       = { 'dark' : "#d78700"        , 'light' : "#875f00" }
 let s:palette.gui.yellow       = { 'dark' : "#ffd700"        , 'light' : "#5f5f00" }
-let s:palette.gui.green        = { 'dark' : "#5f875f"        , 'light' : "#005f00" }
+let s:palette.gui.green        = { 'dark' : "#5faf5f"        , 'light' : "#005f00" }
 let s:palette.gui.aqua         = { 'dark' : "#87afd7"        , 'light' : "#005f5f" }
 let s:palette.gui.blue         = { 'dark' : "#5fafff"        , 'light' : "#00005f" }
 let s:palette.gui.purple       = { 'dark' : "#8787ff"        , 'light' : "#5f005f" }
@@ -79,7 +79,7 @@ else
   let s:cterm_red        = "168"
   let s:cterm_orange     = "172"
   let s:cterm_yellow     = "220"
-  let s:cterm_green      = "65"
+  let s:cterm_green      = "71"
   let s:cterm_aqua       = "110"
   let s:cterm_blue       = "75"
   let s:cterm_purple     = "105"
