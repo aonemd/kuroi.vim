@@ -54,9 +54,9 @@ let s:palette.gui.darkpurple   = { 'dark' : "#5f005f"        , 'light' : "#5f005
 let s:palette.gui.gray         = { 'dark' : "#262626"        , 'light' : "#d0d0d0" }
 let s:palette.gui.statusline   = { 'dark' : "#6c6c6c"        , 'light' : "#585858" }
 let s:palette.gui.statuslinenc = { 'dark' : "#4e4e4e"        , 'light' : "#3a3a3a"  }
-let s:palette.gui.gitgutteradd = { 'dark' : "#009900"        , 'light' : "#009900"  }
-let s:palette.gui.gitgutterchg = { 'dark' : "#bbbb00"        , 'light' : "#bbbb00"  }
-let s:palette.gui.gitgutterdlt = { 'dark' : "#ff2222"        , 'light' : "#ff2222"  }
+let s:palette.gui.gitgutteradd = { 'dark' : "#5faf5f"        , 'light' : "#5faf5f"  }
+let s:palette.gui.gitgutterchg = { 'dark' : "#d78700"        , 'light' : "#d78700"  }
+let s:palette.gui.gitgutterdlt = { 'dark' : "#d75f87"        , 'light' : "#d75f87"  }
 
 let s:cterm_foreground = "250"
 let s:cterm_selection  = "237"
@@ -89,9 +89,9 @@ let s:palette.cterm.darkpurple   = { 'dark' : "53"               , 'light' : "53
 let s:palette.cterm.gray         = { 'dark' : "235"              , 'light' : "252"  }
 let s:palette.cterm.statusline   = { 'dark' : "242"              , 'light' : "240"  }
 let s:palette.cterm.statuslinenc = { 'dark' : "239"              , 'light' : "237"  }
-let s:palette.cterm.gitgutteradd = { 'dark' : "2"                , 'light' : "2"  }
-let s:palette.cterm.gitgutterchg = { 'dark' : "3"                , 'light' : "3"  }
-let s:palette.cterm.gitgutterdlt = { 'dark' : "1"                , 'light' : "1"  }
+let s:palette.cterm.gitgutteradd = { 'dark' : "71"               , 'light' : "71"  }
+let s:palette.cterm.gitgutterchg = { 'dark' : "172"              , 'light' : "172"  }
+let s:palette.cterm.gitgutterdlt = { 'dark' : "168"              , 'light' : "168"  }
 
 "}}}
 " Formatting Options:"{{{
