@@ -2,6 +2,8 @@
   <h1>
     kuroi.vim
   </h1>
+
+  ![Screenshot Preview](https://user-images.githubusercontent.com/16504838/55694276-c0ca1d00-59b3-11e9-8393-d6b69fc2f68d.png)
 </div>
 
 A dark Vim colorscheme
