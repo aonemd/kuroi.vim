@@ -22,7 +22,33 @@ A dark Vim colorscheme
     [Vundle](https://github.com/gmarik/Vundle.vim), or
     [Pathogen](https://github.com/tpope/vim-pathogen).
 
-2.  Add to ~/.vimrc:
+2.  Terminal color modes:
+
+    ### 256 color terminal
+
+    To use the colorscheme in a 256 terminal, add this to your ~/.vimrc:
+
+    ```vim
+    set t_Co=256
+    ```
+
+    to get the correct background color, make sure your terminal background is set
+    to `#1b1918`.
+
+    ### True color terminal
+
+    To use the true color mode where you don't have to specify a certain
+    background color for your terminal config, make sure to set this in your
+    ~/.vimrc:
+
+    ```vim
+    set termguicolors
+    ```
+
+    This works in both true color terminals and GUI Vim clients such as GVim or
+    MacVim.
+
+3.  Add to ~/.vimrc:
 
     ```vim
     set background=dark   "or use the light theme: set background=light
