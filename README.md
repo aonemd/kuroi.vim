@@ -28,3 +28,18 @@ A dark Vim colorscheme
     set background=dark   "or use the light theme: set background=light
     colorscheme kuroi
     ```
+
+## Credits
+
+This colorscheme is originally based on
+[vim-hybrid](https://github.com/w0ng/vim-hybrid). I only changed the color
+palette and some other properties.
+
+## Contribution
+
+Contributions are welcome. If you find something you want to change, open an
+issue or send a pull request.
+
+## License
+
+See [LICENSE](https://github.com/aonemd/kuroi.vim/blob/master/LICENSE).
