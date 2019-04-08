@@ -1,9 +1,9 @@
-<div class="center">
+<div align="center">
   <h1>
     kuroi.vim
   </h1>
 
-  ![Screenshot Preview](https://user-images.githubusercontent.com/16504838/55694276-c0ca1d00-59b3-11e9-8393-d6b69fc2f68d.png)
+  ![kuroi.vim screenshot](https://user-images.githubusercontent.com/16504838/55715302-c005ab00-59f4-11e9-9c62-0aa4221f9cf8.png)
 </div>
 
 A dark Vim colorscheme
