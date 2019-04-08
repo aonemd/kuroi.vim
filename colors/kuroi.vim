@@ -58,33 +58,10 @@ let s:palette.gui.gitgutteradd = { 'dark' : "#009900"        , 'light' : "#00990
 let s:palette.gui.gitgutterchg = { 'dark' : "#bbbb00"        , 'light' : "#bbbb00"  }
 let s:palette.gui.gitgutterdlt = { 'dark' : "#ff2222"        , 'light' : "#ff2222"  }
 
-if exists("g:kuroi_custom_term_colors") && g:kuroi_custom_term_colors == 1
-  let s:cterm_foreground = "15"  " White
-  let s:cterm_selection  = "8"   " DarkGrey
-  let s:cterm_line       = "0"   " Black
-  let s:cterm_comment    = "7"   " LightGrey
-  let s:cterm_red        = "9"   " LightRed
-  let s:cterm_orange     = "3"   " DarkYellow
-  let s:cterm_yellow     = "11"  " LightYellow
-  let s:cterm_green      = "10"  " LightGreen
-  let s:cterm_aqua       = "14"  " LightCyan
-  let s:cterm_blue       = "12"  " LightBlue
-  let s:cterm_purple     = "13"  " LightMagenta
-  let s:cterm_delbg      = "9"   " LightRed
-else
-  let s:cterm_foreground = "250"
-  let s:cterm_selection  = "237"
-  let s:cterm_line       = "235"
-  let s:cterm_comment    = "243"
-  let s:cterm_red        = "168"
-  let s:cterm_orange     = "172"
-  let s:cterm_yellow     = "220"
-  let s:cterm_green      = "71"
-  let s:cterm_aqua       = "110"
-  let s:cterm_blue       = "75"
-  let s:cterm_purple     = "105"
-  let s:cterm_delbg      = "167"
-endif
+let s:cterm_foreground = "250"
+let s:cterm_selection  = "237"
+let s:cterm_line       = "235"
+let s:cterm_comment    = "243"
 
 let s:palette.cterm.background   = { 'dark' : "0"                , 'light' : "254" }
 let s:palette.cterm.foreground   = { 'dark' : s:cterm_foreground , 'light' : "16"  }
@@ -92,19 +69,19 @@ let s:palette.cterm.window       = { 'dark' : "236"              , 'light' : "24
 let s:palette.cterm.selection    = { 'dark' : s:cterm_selection  , 'light' : "250" }
 let s:palette.cterm.line         = { 'dark' : s:cterm_line       , 'light' : "252" }
 let s:palette.cterm.comment      = { 'dark' : s:cterm_comment    , 'light' : "59"  }
-let s:palette.cterm.red          = { 'dark' : s:cterm_red        , 'light' : "52"  }
-let s:palette.cterm.orange       = { 'dark' : s:cterm_orange     , 'light' : "94"  }
-let s:palette.cterm.yellow       = { 'dark' : s:cterm_yellow     , 'light' : "58"  }
-let s:palette.cterm.green        = { 'dark' : s:cterm_green      , 'light' : "22"  }
-let s:palette.cterm.aqua         = { 'dark' : s:cterm_aqua       , 'light' : "23"  }
-let s:palette.cterm.blue         = { 'dark' : s:cterm_blue       , 'light' : "17"  }
-let s:palette.cterm.purple       = { 'dark' : s:cterm_purple     , 'light' : "53"  }
+let s:palette.cterm.red          = { 'dark' : "168"              , 'light' : "52"  }
+let s:palette.cterm.orange       = { 'dark' : "172"              , 'light' : "94"  }
+let s:palette.cterm.yellow       = { 'dark' : "220"              , 'light' : "58"  }
+let s:palette.cterm.green        = { 'dark' : "71"               , 'light' : "22"  }
+let s:palette.cterm.aqua         = { 'dark' : "110"              , 'light' : "23"  }
+let s:palette.cterm.blue         = { 'dark' : "75"               , 'light' : "17"  }
+let s:palette.cterm.purple       = { 'dark' : "105"              , 'light' : "53"  }
 let s:palette.cterm.darkcolumn   = { 'dark' : "234"              , 'light' : "244" }
 let s:palette.cterm.addbg        = { 'dark' : "65"               , 'light' : "194" }
 let s:palette.cterm.addfg        = { 'dark' : "193"              , 'light' : "22"  }
 let s:palette.cterm.changebg     = { 'dark' : "60"               , 'light' : "189" }
 let s:palette.cterm.changefg     = { 'dark' : "189"              , 'light' : "53"  }
-let s:palette.cterm.delbg        = { 'dark' : s:cterm_delbg      , 'light' : "224" }
+let s:palette.cterm.delbg        = { 'dark' : "167"              , 'light' : "224" }
 let s:palette.cterm.darkblue     = { 'dark' : "17"               , 'light' : "194" }
 let s:palette.cterm.darkcyan     = { 'dark' : "24"               , 'light' : "22"  }
 let s:palette.cterm.darkred      = { 'dark' : "52"               , 'light' : "189" }
@@ -281,13 +258,7 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
 "   WildMenu"
 
-" Use defined custom background colour for terminal Vim.
-if !has('gui_running') && exists("g:kuroi_custom_term_colors") && g:kuroi_custom_term_colors == 1
-  let s:bg_normal = s:bg_none
-else
-  let s:bg_normal = s:bg_background
-endif
-exe "hi! Normal"        .s:fg_foreground  .s:bg_normal      .s:fmt_none
+exe "hi! Normal"        .s:fg_foreground  .s:bg_background    .s:fmt_none
 
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
