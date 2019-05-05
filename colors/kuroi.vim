@@ -355,6 +355,7 @@ let &background = s:style
 " Copyright (c) 2011 Ethan Schoonover
 " Copyright (c) 2009-2012 NanoTech
 " Copyright (c) 2012 w0ng
+" Copyright (c) 2019 aonemd
 "
 " Permission is hereby granted, free of charge, to any per‐
 " son obtaining a copy of this software and associated doc‐
