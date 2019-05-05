@@ -24,16 +24,16 @@ A dark Vim colorscheme
 
 2.  Terminal color modes:
 
-    ### 256 color terminal
+    ### 256-color terminal
 
-    To use the colorscheme in a 256 terminal, add this to your ~/.vimrc:
+    To use the colorscheme in a 256-color terminal, add this to your ~/.vimrc:
 
     ```vim
     set t_Co=256
     ```
 
     You might have your background color a little off in terminal Vim. To fix
-    it, you need to set your terminal's background color to `#1b1918` for the
+    this, you need to set your terminal's background color to `#1b1918` for the
     dark colorscheme and `"#e4e4e4"` for the light colorscheme.
 
     ### True color terminal
