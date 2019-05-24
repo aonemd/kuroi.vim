@@ -43,6 +43,11 @@ A dark Vim colorscheme
     This works in both true color terminals and GUI Vim clients such as GVim or
     MacVim.
 
+    Tip: For some reason, Vim with termguicolors set inside Tmux might have a
+    different background color (a little off) than the original background
+    color. To work around this issue, please make sure you have this `set -g
+    terminal-overrides ",xterm-256color:Tc"` in your tmux.conf file.
+
 3.  Add to ~/.vimrc:
 
     ```vim
