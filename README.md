@@ -32,10 +32,6 @@ A dark Vim colorscheme
     set t_Co=256
     ```
 
-    You might have your background color a little off in terminal Vim. To fix
-    this, you need to set your terminal's **color0** to `#1b1918` for the dark
-    colorscheme and `"#e4e4e4"` for the light colorscheme.
-
     ### True color terminal
 
     To use the true color mode, make sure to set this in your ~/.vimrc:

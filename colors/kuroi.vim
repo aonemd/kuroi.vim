@@ -63,7 +63,7 @@ let s:cterm_selection  = "237"
 let s:cterm_line       = "235"
 let s:cterm_comment    = "243"
 
-let s:palette.cterm.background   = { 'dark' : "0"                , 'light' : "254" }
+let s:palette.cterm.background   = { 'dark' : "234"              , 'light' : "254" }
 let s:palette.cterm.foreground   = { 'dark' : s:cterm_foreground , 'light' : "16"  }
 let s:palette.cterm.window       = { 'dark' : "236"              , 'light' : "247" }
 let s:palette.cterm.selection    = { 'dark' : s:cterm_selection  , 'light' : "250" }
