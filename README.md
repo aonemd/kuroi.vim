@@ -33,8 +33,8 @@ A dark Vim colorscheme
     ```
 
     You might have your background color a little off in terminal Vim. To fix
-    this, you need to set your terminal's background color to `#1b1918` for the
-    dark colorscheme and `"#e4e4e4"` for the light colorscheme.
+    this, you need to set your terminal's **color0** to `#1b1918` for the dark
+    colorscheme and `"#e4e4e4"` for the light colorscheme.
 
     ### True color terminal
 
