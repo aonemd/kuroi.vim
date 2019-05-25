@@ -61,6 +61,12 @@ This colorscheme is originally based on
 [vim-hybrid](https://github.com/w0ng/vim-hybrid). I only changed the color
 palette and some other properties.
 
+## Todos
+
+- [] Remove the light theme?
+- [] Remove hardcoded values
+- [] Refactor the code
+
 ## Contribution
 
 Contributions are welcome. If you find something you want to change, open an
