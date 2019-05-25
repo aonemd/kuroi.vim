@@ -80,6 +80,8 @@ See [LICENSE](https://github.com/aonemd/kuroi.vim/blob/master/LICENSE).
 
 ![Screenshot Sails.js](https://user-images.githubusercontent.com/16504838/55747682-11398d00-5a3d-11e9-87e4-e6a16332688b.png)
 
+![Screenshot Vim terminal](https://user-images.githubusercontent.com/16504838/58362903-26f3fc00-7e9d-11e9-9b00-cdbdfa8b4e77.png)
+
 **Light**
 
 ![Screenshot light Ruby and Go](https://user-images.githubusercontent.com/16504838/55748313-a0937000-5a3e-11e9-832d-4848d23d4621.png)
