@@ -256,9 +256,9 @@ exe "hi! Title"             .s:fg_yellow      .s:bg_none        .s:fmt_none
 exe "hi! Visual"            .s:fg_none        .s:bg_selection   .s:fmt_none
 "   VisualNos"
 exe "hi! WarningMsg"        .s:fg_red         .s:bg_none        .s:fmt_none
+exe "hi! WildMenu"          .s:fg_selection   .s:bg_orange      .s:fmt_none
 " FIXME LongLineWarning to use variables instead of hardcoding
 hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
-"   WildMenu"
 
 exe "hi! Normal"        .s:fg_foreground  .s:bg_background    .s:fmt_none
 
