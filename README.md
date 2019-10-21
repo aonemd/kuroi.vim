@@ -63,9 +63,9 @@ palette and some other properties.
 
 ## Todos
 
-- [] Remove the light theme?
-- [] Remove hardcoded values
-- [] Refactor the code
+- [ ] Remove the light theme?
+- [ ] Remove hardcoded values
+- [ ] Refactor the code
 
 ## Contribution
 
