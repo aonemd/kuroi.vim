@@ -1,10 +1,7 @@
 <div align="center">
   <h1>
-    kuroi.vim
+    kuroi.vim (黒い)
   </h1>
-  <h3>
-    黒い
-  </h3>
 
   ![kuroi.vim screenshot](https://user-images.githubusercontent.com/16504838/55715302-c005ab00-59f4-11e9-9c62-0aa4221f9cf8.png)
 </div>
