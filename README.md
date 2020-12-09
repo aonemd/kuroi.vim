@@ -91,6 +91,8 @@ See [LICENSE](https://github.com/aonemd/kuroi.vim/blob/master/LICENSE).
 
 ![Screenshot Vim terminal](https://user-images.githubusercontent.com/16504838/58362903-26f3fc00-7e9d-11e9-9b00-cdbdfa8b4e77.png)
 
+![Screenshot Vim diff](https://user-images.githubusercontent.com/16504838/101638578-e7691280-3a36-11eb-84a0-76d53c62e391.png)
+
 **Light**
 
 ![Screenshot light Ruby and Go](https://user-images.githubusercontent.com/16504838/55748313-a0937000-5a3e-11e9-832d-4848d23d4621.png)
