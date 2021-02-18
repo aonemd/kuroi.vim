@@ -55,6 +55,15 @@ A dark Vim colorscheme
     colorscheme kuroi
     ```
 
+## Extra
+
+- The colorscheme has a special group to highlight Vim `popup` window called
+    `InfoPopup`. To use the group, add the following to `.vimrc`:
+    ```vim
+    set completeopt=menu,menuone,popup               "enable popup window
+    set completepopup=highlight:InfoPopup,border:off "configure the highlight group
+    ```
+
 ## Credits
 
 This colorscheme is originally based on
