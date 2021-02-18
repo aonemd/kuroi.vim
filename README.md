@@ -51,7 +51,7 @@ A dark Vim colorscheme
 3.  Add to ~/.vimrc:
 
     ```vim
-    set background=dark   "or use the light theme: set background=light
+    set background=dark
     colorscheme kuroi
     ```
 
@@ -72,7 +72,7 @@ palette and some other properties.
 
 ## Todos
 
-- [ ] Remove the light theme?
+- [x] Remove the light theme?
 - [ ] Remove hardcoded values
 - [ ] Refactor the code
 
@@ -87,8 +87,6 @@ See [LICENSE](https://github.com/aonemd/kuroi.vim/blob/master/LICENSE).
 
 ## Screenshots
 
-**Dark**
-
 ![Screenshot Ruby](https://user-images.githubusercontent.com/16504838/55748221-5f02c500-5a3e-11e9-91ed-84e6095ddbf2.png)
 
 ![Screenshot Go](https://user-images.githubusercontent.com/16504838/55747648-054dcb00-5a3d-11e9-9c1f-74dd895d4670.png)
@@ -98,9 +96,3 @@ See [LICENSE](https://github.com/aonemd/kuroi.vim/blob/master/LICENSE).
 ![Screenshot Vim terminal](https://user-images.githubusercontent.com/16504838/58362903-26f3fc00-7e9d-11e9-9b00-cdbdfa8b4e77.png)
 
 ![Screenshot Vim diff](https://user-images.githubusercontent.com/16504838/101638578-e7691280-3a36-11eb-84a0-76d53c62e391.png)
-
-**Light**
-
-![Screenshot light Ruby and Go](https://user-images.githubusercontent.com/16504838/55748313-a0937000-5a3e-11e9-832d-4848d23d4621.png)
-
-![Screenshot light Ruby](https://user-images.githubusercontent.com/16504838/55748435-f700ae80-5a3e-11e9-9038-99114d8a9ab9.png)
