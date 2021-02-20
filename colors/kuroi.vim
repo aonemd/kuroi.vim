@@ -57,6 +57,7 @@ let s:palette.gui.statuslinenc = { 'dark' : "#4e4e4e"        }
 let s:palette.gui.gitgutteradd = { 'dark' : "#5faf5f"        }
 let s:palette.gui.gitgutterchg = { 'dark' : "#d78700"        }
 let s:palette.gui.gitgutterdlt = { 'dark' : "#d75f87"        }
+let s:palette.gui.linewarning  = { 'dark' : "#371F1C"        }
 
 let s:cterm_foreground = "250"
 let s:cterm_selection  = "237"
@@ -92,6 +93,7 @@ let s:palette.cterm.statuslinenc = { 'dark' : "239"              }
 let s:palette.cterm.gitgutteradd = { 'dark' : "71"               }
 let s:palette.cterm.gitgutterchg = { 'dark' : "172"              }
 let s:palette.cterm.gitgutterdlt = { 'dark' : "168"              }
+let s:palette.cterm.linewarning  = { 'dark' : "NONE"             }
 
 "}}}
 " Formatting Options:"{{{
@@ -143,6 +145,7 @@ call s:build_prim('bg', 'darkred')
 call s:build_prim('bg', 'darkpurple')
 call s:build_prim('bg', 'statusline')
 call s:build_prim('bg', 'statuslinenc')
+call s:build_prim('bg', 'linewarning')
 
 let s:fg_none = ' guifg=NONE ctermfg=NONE'
 call s:build_prim('fg', 'foreground')
@@ -258,8 +261,8 @@ exe "hi! Visual"            .s:fg_none        .s:bg_selection   .s:fmt_none
 "   VisualNos"
 exe "hi! WarningMsg"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! WildMenu"          .s:fg_selection   .s:bg_orange      .s:fmt_none
-" FIXME LongLineWarning to use variables instead of hardcoding
-hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
+exe "hi! LongLineWarning"   .s:fg_none        .s:bg_linewarning .s:fmt_undr
+
 
 exe "hi! Normal"        .s:fg_foreground  .s:bg_background    .s:fmt_none
 
