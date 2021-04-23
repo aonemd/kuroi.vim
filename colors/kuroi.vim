@@ -49,7 +49,7 @@ let s:palette.gui.changefg     = { 'dark' : "#f7e7cc"        }
 let s:palette.gui.delbg        = { 'dark' : "#d75f87"        }
 let s:palette.gui.darkblue     = { 'dark' : "#00005f"        }
 let s:palette.gui.darkcyan     = { 'dark' : "#005f5f"        }
-let s:palette.gui.darkred      = { 'dark' : "#5f0000"        }
+let s:palette.gui.darkred      = { 'dark' : "#d75f87"        }
 let s:palette.gui.darkpurple   = { 'dark' : "#5f005f"        }
 let s:palette.gui.gray         = { 'dark' : "#262626"        }
 let s:palette.gui.statusline   = { 'dark' : "#6c6c6c"        }
@@ -85,7 +85,7 @@ let s:palette.cterm.changefg     = { 'dark' : "189"              }
 let s:palette.cterm.delbg        = { 'dark' : "168"              }
 let s:palette.cterm.darkblue     = { 'dark' : "17"               }
 let s:palette.cterm.darkcyan     = { 'dark' : "24"               }
-let s:palette.cterm.darkred      = { 'dark' : "52"               }
+let s:palette.cterm.darkred      = { 'dark' : "168"              }
 let s:palette.cterm.darkpurple   = { 'dark' : "53"               }
 let s:palette.cterm.gray         = { 'dark' : "235"              }
 let s:palette.cterm.statusline   = { 'dark' : "242"              }
@@ -246,7 +246,7 @@ exe "hi! Search"            .s:fg_background  .s:bg_yellow        .s:fmt_none
 exe "hi! SpecialKey"        .s:fg_selection   .s:bg_none          .s:fmt_none
 exe "hi! SpellCap"          .s:fg_blue        .s:bg_darkblue      .s:fmt_undr
 exe "hi! SpellLocal"        .s:fg_aqua        .s:bg_darkcyan      .s:fmt_undr
-exe "hi! SpellBad"          .s:fg_red         .s:bg_darkred       .s:fmt_undr
+exe "hi! SpellBad"          .s:fg_darkred     .s:bg_none          .s:fmt_undr
 exe "hi! SpellRare"         .s:fg_purple      .s:bg_darkpurple    .s:fmt_undr
 exe "hi! StatusLine"        .s:fg_gray        .s:bg_statusline    .s:fmt_revr
 exe "hi! StatusLineNC"      .s:fg_gray        .s:bg_statuslinenc  .s:fmt_revr
@@ -311,7 +311,7 @@ exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_none
 
 exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
 
-exe "hi! Error"           .s:fg_red         .s:bg_darkred     .s:fmt_undr
+exe "hi! Error"           .s:fg_darkred     .s:bg_none        .s:fmt_undr
 
 exe "hi! Todo"            .s:fg_foreground  .s:bg_none        .s:fmt_bold
 
