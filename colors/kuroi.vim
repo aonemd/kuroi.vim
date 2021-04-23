@@ -291,6 +291,7 @@ exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
 
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
+exe "hi! Character"       .s:fg_green       .s:bg_none        .s:fmt_none
 "   Character"
 "   Number"
 "   Boolean"
