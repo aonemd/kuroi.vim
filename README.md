@@ -3,10 +3,12 @@
     kuroi.vim (黒い)
   </h1>
 
-  ![kuroi.vim screenshot](https://user-images.githubusercontent.com/16504838/55715302-c005ab00-59f4-11e9-9c62-0aa4221f9cf8.png)
-</div>
+  A very dark colorscheme for Vim.
 
-A dark Vim colorscheme
+  ![kuroi.vim screenshot](https://user-images.githubusercontent.com/16504838/55715302-c005ab00-59f4-11e9-9c62-0aa4221f9cf8.png)
+
+  [Screenshots](https://github.com/aonemd/kuroi.vim#screenshots)
+</div>
 
 ## Installation
 
@@ -55,7 +57,7 @@ A dark Vim colorscheme
     colorscheme kuroi
     ```
 
-## Extra
+## Extras
 
 - The colorscheme has a special group to highlight Vim `popup` window called
     `InfoPopup`. To use the group, add the following to `.vimrc`:
@@ -69,11 +71,6 @@ A dark Vim colorscheme
 This colorscheme is originally based on
 [vim-hybrid](https://github.com/w0ng/vim-hybrid). I only changed the color
 palette and some other properties.
-
-## Todos
-
-- [x] Remove the light theme?
-- [x] Remove hardcoded values
 
 ## Contribution
 
