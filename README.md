@@ -26,15 +26,9 @@
 
 2.  Terminal color modes:
 
-    ### 256-color terminal
+    The colorscheme works in both true color mode and 256-color mode.
 
-    To use the colorscheme in a 256-color terminal, add this to your ~/.vimrc:
-
-    ```vim
-    set t_Co=256
-    ```
-
-    ### True color terminal
+    ### True color terminal mode
 
     To use the true color mode, make sure to set this in your ~/.vimrc:
 
@@ -49,6 +43,14 @@
     a different background color (a little off) than the original background
     color. To work around this issue, please make sure you have this `set -g
     terminal-overrides ",xterm-256color:Tc"` in your tmux.conf file.
+
+    ### 256-color terminal mode
+
+    To use the colorscheme in a 256-color terminal, add this to your ~/.vimrc:
+
+    ```vim
+    set t_Co=256
+    ```
 
 3.  Add to ~/.vimrc:
 
