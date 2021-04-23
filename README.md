@@ -5,7 +5,7 @@
 
   A very dark colorscheme for Vim.
 
-  ![kuroi.vim screenshot](https://user-images.githubusercontent.com/16504838/55715302-c005ab00-59f4-11e9-9c62-0aa4221f9cf8.png)
+  ![kuroi.vim screenshot](https://user-images.githubusercontent.com/16504838/115910699-6fdbd300-a46d-11eb-8c1e-7c783df01a66.png)
 
   [Screenshots](https://github.com/aonemd/kuroi.vim#screenshots)
 </div>
@@ -85,12 +85,8 @@ See [LICENSE](https://github.com/aonemd/kuroi.vim/blob/master/LICENSE).
 
 ## Screenshots
 
-![Screenshot Ruby](https://user-images.githubusercontent.com/16504838/55748221-5f02c500-5a3e-11e9-91ed-84e6095ddbf2.png)
+![screenshot_1](https://user-images.githubusercontent.com/16504838/115911033-dd87ff00-a46d-11eb-8a2d-ee16cd4f76c4.png)
 
-![Screenshot Go](https://user-images.githubusercontent.com/16504838/55747648-054dcb00-5a3d-11e9-9c1f-74dd895d4670.png)
+![screenshot_2](https://user-images.githubusercontent.com/16504838/115911420-5be4a100-a46e-11eb-94aa-1c4584207cee.png)
 
-![Screenshot Sails.js](https://user-images.githubusercontent.com/16504838/55747682-11398d00-5a3d-11e9-87e4-e6a16332688b.png)
-
-![Screenshot Vim terminal](https://user-images.githubusercontent.com/16504838/58362903-26f3fc00-7e9d-11e9-9b00-cdbdfa8b4e77.png)
-
-![Screenshot Vim diff](https://user-images.githubusercontent.com/16504838/101638578-e7691280-3a36-11eb-84a0-76d53c62e391.png)
+![screenshot_3](https://user-images.githubusercontent.com/16504838/101638578-e7691280-3a36-11eb-84a0-76d53c62e391.png)
