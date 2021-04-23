@@ -259,7 +259,7 @@ exe "hi! EndOfBuffer"       .s:fg_background  .s:bg_background    .s:fmt_none
 exe "hi! Title"             .s:fg_yellow      .s:bg_none        .s:fmt_none
 exe "hi! Visual"            .s:fg_none        .s:bg_selection   .s:fmt_none
 "   VisualNos"
-exe "hi! WarningMsg"        .s:fg_red         .s:bg_none        .s:fmt_none
+exe "hi! WarningMsg"        .s:fg_yellow      .s:bg_none        .s:fmt_undr
 exe "hi! WildMenu"          .s:fg_selection   .s:bg_orange      .s:fmt_none
 exe "hi! LongLineWarning"   .s:fg_none        .s:bg_linewarning .s:fmt_undr
 
