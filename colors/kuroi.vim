@@ -262,7 +262,7 @@ exe "hi! InfoPopup"     .s:fg_foreground  .s:bg_selection   .s:fmt_none
 exe "hi! Question"          .s:fg_green       .s:bg_none          .s:fmt_none
 exe "hi! Search"            .s:fg_background  .s:bg_yellow        .s:fmt_none
 exe "hi! SpecialKey"        .s:fg_selection   .s:bg_none          .s:fmt_none
-exe "hi! SpellCap"          .s:fg_blue        .s:bg_darkblue      .s:fmt_undr
+exe "hi! SpellCap"          .s:fg_blue        .s:bg_none          .s:fmt_undr
 exe "hi! SpellLocal"        .s:fg_aqua        .s:bg_darkcyan      .s:fmt_undr
 exe "hi! SpellBad"          .s:fg_darkred     .s:bg_none          .s:fmt_undr
 exe "hi! SpellRare"         .s:fg_purple      .s:bg_darkpurple    .s:fmt_undr
