@@ -28,6 +28,7 @@ let s:gui_foreground = "#c5c8c6"
 let s:gui_selection  = "#373b41"
 let s:gui_line       = "#282a2e"
 let s:gui_comment    = "#707880"
+let s:gui_function   = get(g:, "kuroi_function_color", "#acbac9")
 
 let s:gui_red          = "#d75f87"
 let s:gui_orange       = "#d78700"
@@ -50,6 +51,7 @@ let s:palette.gui.aqua         = { 'dark' : s:gui_aqua       }
 let s:palette.gui.blue         = { 'dark' : s:gui_blue       }
 let s:palette.gui.purple       = { 'dark' : s:gui_purple     }
 let s:palette.gui.window       = { 'dark' : "#303030"        }
+let s:palette.gui.function     = { 'dark' : s:gui_function   }
 let s:palette.gui.darkcolumn   = { 'dark' : "#1c1c1c"        }
 let s:palette.gui.addbg        = { 'dark' : s:gui_green      }
 let s:palette.gui.addfg        = { 'dark' : "#dfefdf"        }
@@ -73,6 +75,7 @@ let s:cterm_foreground = "250"
 let s:cterm_selection  = "237"
 let s:cterm_line       = "235"
 let s:cterm_comment    = "243"
+let s:cterm_function   = get(g:, "kuroi_function_color", "236")
 
 let s:cterm_red    = "168"
 let s:cterm_orange = "172"
@@ -85,6 +88,7 @@ let s:cterm_purple = "105"
 let s:palette.cterm.background   = { 'dark' : s:cterm_background }
 let s:palette.cterm.foreground   = { 'dark' : s:cterm_foreground }
 let s:palette.cterm.window       = { 'dark' : "236"              }
+let s:palette.cterm.function     = { 'dark' : s:cterm_function   }
 let s:palette.cterm.selection    = { 'dark' : s:cterm_selection  }
 let s:palette.cterm.line         = { 'dark' : s:cterm_line       }
 let s:palette.cterm.comment      = { 'dark' : s:cterm_comment    }
@@ -151,6 +155,7 @@ call s:build_prim('bg', 'aqua')
 call s:build_prim('bg', 'blue')
 call s:build_prim('bg', 'purple')
 call s:build_prim('bg', 'window')
+call s:build_prim('bg', 'function')
 call s:build_prim('bg', 'darkcolumn')
 call s:build_prim('bg', 'addbg')
 call s:build_prim('bg', 'addfg')
@@ -179,6 +184,7 @@ call s:build_prim('fg', 'aqua')
 call s:build_prim('fg', 'blue')
 call s:build_prim('fg', 'purple')
 call s:build_prim('fg', 'window')
+call s:build_prim('fg', 'function')
 call s:build_prim('fg', 'darkcolumn')
 call s:build_prim('fg', 'addbg')
 call s:build_prim('fg', 'addfg')
@@ -219,6 +225,7 @@ exe "let s:sp_aqua       = ' guisp=". s:palette.gui.aqua[s:style]       ."'"
 exe "let s:sp_blue       = ' guisp=". s:palette.gui.blue[s:style]       ."'"
 exe "let s:sp_purple     = ' guisp=". s:palette.gui.purple[s:style]     ."'"
 exe "let s:sp_window     = ' guisp=". s:palette.gui.window[s:style]     ."'"
+exe "let s:sp_function   = ' guisp=". s:palette.gui.function[s:style]     ."'"
 exe "let s:sp_addbg      = ' guisp=". s:palette.gui.addbg[s:style]      ."'"
 exe "let s:sp_addfg      = ' guisp=". s:palette.gui.addfg[s:style]      ."'"
 exe "let s:sp_changebg   = ' guisp=". s:palette.gui.changebg[s:style]   ."'"
@@ -298,7 +305,7 @@ exe "hi! Character"       .s:fg_green       .s:bg_none        .s:fmt_none
 "   Float"
 
 exe "hi! Identifier"      .s:fg_purple      .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_foreground  .s:bg_none        .s:fmt_bold
+exe "hi! Function"        .s:fg_function    .s:bg_none        .s:fmt_bold
 
 exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
 "   Conditional"
