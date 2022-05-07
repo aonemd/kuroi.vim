@@ -395,6 +395,12 @@ exe "hi! SignifySignChange"  .s:fg_gitgutterchg  .s:bg_none  .s:fmt_none
 exe "hi! SignifySignDelete"  .s:fg_gitgutterdlt  .s:bg_none  .s:fmt_none
 
 "}}}
+" Nvim Stuff:"{{{
+" ----------------------------------------------------------------------------
+exe "hi! NormalFloat"               .s:fg_foreground  .s:bg_background  .s:fmt_none
+exe "hi! FloatBorder"               .s:fg_selection   .s:bg_none        .s:fmt_none
+
+"}}}
 "
 " This is needed for some reason: {{{
 
