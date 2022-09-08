@@ -59,6 +59,13 @@
     colorscheme kuroi
     ```
 
+## Customize
+
+- Function name highlight color can be configured:
+  ```vim
+  let g:kuroi_function_color = "#acbac9"
+  ```
+
 ## Extras
 
 - The colorscheme has a special group to highlight Vim `popup` window called
