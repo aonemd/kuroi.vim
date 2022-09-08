@@ -23,7 +23,7 @@ let g:colors_name = "kuroi"
 
 let s:palette = {'gui' : {} , 'cterm' : {}}
 
-let s:gui_background = "#1b1918"
+let s:gui_background = get(g:, "kuroi_background_color", "#1b1918")
 let s:gui_foreground = "#c5c8c6"
 let s:gui_selection  = "#373b41"
 let s:gui_line       = "#282a2e"
@@ -70,7 +70,7 @@ let s:palette.gui.gitgutterchg = { 'dark' : s:gui_orange     }
 let s:palette.gui.gitgutterdlt = { 'dark' : s:gui_red        }
 let s:palette.gui.linewarning  = { 'dark' : "#371F1C"        }
 
-let s:cterm_background = "234"
+let s:cterm_background = get(g:, "kuroi_background_color", "234")
 let s:cterm_foreground = "250"
 let s:cterm_selection  = "237"
 let s:cterm_line       = "235"

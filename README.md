@@ -61,6 +61,11 @@
 
 ## Customize
 
+-  Background color can be configured:
+  ```vim
+  let g:kuroi_background_color = "#1b1918"
+  ```
+
 - Function name highlight color can be configured:
   ```vim
   let g:kuroi_function_color = "#acbac9"
