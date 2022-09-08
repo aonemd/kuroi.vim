@@ -61,7 +61,7 @@
 
 ## Customize
 
--  Background color can be configured:
+- Background color can be configured:
   ```vim
   let g:kuroi_background_color = "#1b1918"
   ```
