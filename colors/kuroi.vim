@@ -277,10 +277,12 @@ exe "hi! StatusLine"        .s:fg_gray        .s:bg_statusline    .s:fmt_revr
 exe "hi! StatusLineNC"      .s:fg_gray        .s:bg_statuslinenc  .s:fmt_revr
 exe "hi! StatusLineTerm"    .s:fg_gray        .s:bg_statusline    .s:fmt_revr
 exe "hi! StatusLineTermNC"  .s:fg_gray        .s:bg_statuslinenc  .s:fmt_revr
-exe "hi! TabLine"           .s:fg_foreground  .s:bg_darkcolumn    .s:fmt_revr
-exe "hi! TabLineFill"       .s:fg_background  .s:bg_background    .s:fmt_revr
-exe "hi! EndOfBuffer"       .s:fg_background  .s:bg_background    .s:fmt_none
-"   TabLineSel"
+
+exe "hi! TabLine"           .s:fg_statuslinenc  .s:bg_gray    .s:fmt_none
+exe "hi! TabLineSel"        .s:fg_statusline  .s:bg_background            .s:fmt_bold
+exe "hi! TabLineFill"       .s:fg_gray .s:bg_gray           .s:fmt_none
+exe "hi! EndOfBuffer"       .s:fg_gray .s:bg_background     .s:fmt_none
+
 exe "hi! Title"             .s:fg_yellow      .s:bg_none        .s:fmt_bold
 exe "hi! Visual"            .s:fg_none        .s:bg_selection   .s:fmt_none
 "   VisualNos"
